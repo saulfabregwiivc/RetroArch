@@ -183,6 +183,7 @@ else ifeq ($(libogc_platform), 1)
       endif
    endif
 
+LIBS += -L/opt/devkitpro/portlibs/ppc/lib -lvorbisfile -lvorbis -logg
    ifeq ($(EXTERNAL_LIBOGC), 1)
       LIBS += -lfat
    endif
