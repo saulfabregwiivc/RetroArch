@@ -105,6 +105,7 @@ ifeq ($(BIG_STACK), 1)
    LDFLAGS += -T bootstrap/gx/rvl.ld
 endif
 
+LIBS += -L/opt/devkitpro/portlibs/ppc/lib -lvorbisfile -lvorbis -logg
 ifeq ($(EXTERNAL_LIBOGC), 1)
    LIBS += -lfat
 endif
